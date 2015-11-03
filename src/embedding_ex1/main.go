@@ -56,11 +56,12 @@ func (h hockey) Search(searchTerm string) bool {
 // main is the entry point for the application.
 func main() {
 	// Define the term to search.
-	term := "Blue"
+	term := "Knights"
 	// Create a slice of matcher values to search.
 	matchers := []matcher{
-		hockey{sport{"Cougars", "Maplewood"}, "Blue"},
+		hockey{sport{"Pirates", "South Orange"}, "Blue"},
 		hockey{sport{"Cougars", "Maplewood"}, "Red"},
+		sport{"Knights", "Caldwell"},
 	}
 
 	// Display what we are searching for.
